@@ -32,6 +32,7 @@ limit 10     -- identify the top 10 highest total revenue
 
 
 Answer:
+![Screenshot 2024-11-07 101254](https://github.com/user-attachments/assets/c78b5b6d-affd-4542-ada7-6092192a31a6)
 
 
 
