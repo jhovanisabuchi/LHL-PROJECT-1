@@ -189,7 +189,8 @@ with revenue as (
 from analytics
  where unitssold is not null and 
        unitprice is not null
-	   and unitprice > 0 -- exclude raws with nulls and 0 to avoid miscalculation
+	   and unitprice > 0 and 
+	   unitssold  > 0-- exclude raws with nulls and 0 to avoid miscalculation
      )
  
 select city,
@@ -205,9 +206,10 @@ group by city,
 order by total_revenue desc 
 ;
 
-Answer:
-![Screenshot 2024-11-07 035629](https://github.com/user-attachments/assets/1b479d28-cd14-4664-9748-1267be09e0a0)
+;
 
+Answer:
+![Screenshot 2024-11-07 112053](https://github.com/user-attachments/assets/68fa8d5a-4ee5-4786-ba38-ead4a5064813)
 
 
 
