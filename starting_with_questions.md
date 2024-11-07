@@ -63,6 +63,7 @@ order by  avg_order desc
 
 Answer:
 
+![Screenshot 2024-11-07 034615](https://github.com/user-attachments/assets/537ebe84-0886-490e-91dd-0df4337b89e8)
 
 
 
@@ -124,6 +125,7 @@ select
 
 Answer:
 
+![Screenshot 2024-11-07 034908](https://github.com/user-attachments/assets/16b41dbc-fa01-4496-9140-28d2cba59f8f)
 
 
 
@@ -158,7 +160,7 @@ ranked_sales as (
 select productname,
        country,
 	   city,
-	   total_sales
+	   to_char(total_sales, '9,999,999,999') as total_sales
 from ranked_sales
 where sales_rank = 1 and
       total_sales > 0
@@ -169,6 +171,7 @@ order by total_sales desc
 
 
 Answer:
+![Screenshot 2024-11-07 035354](https://github.com/user-attachments/assets/d6340fea-06cd-4527-abcb-39d2ff0ce67c)
 
 
 
@@ -191,7 +194,7 @@ from analytics
  
 select city,
      country, 
-     sum(sales_revenue) as total_revenue
+     to_char(sum(sales_revenue),'9,999,999,999') as total_revenue
 from all_sessions s
   join revenue r
     using (visitid)
@@ -202,11 +205,8 @@ group by city,
 order by total_revenue desc 
 ;
 
-
-
-
-
 Answer:
+![Screenshot 2024-11-07 035629](https://github.com/user-attachments/assets/1b479d28-cd14-4664-9748-1267be09e0a0)
 
 
 
