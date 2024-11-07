@@ -36,7 +36,6 @@ Answer:
 
 
 
-![Screenshot 2024-11-07 033343](https://github.com/user-attachments/assets/ca080d1c-b997-405c-bb87-3ad8cd743858)
 
 
 **Question 2: What is the average number of products ordered from visitors in each city and country?**
