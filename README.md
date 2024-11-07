@@ -21,7 +21,7 @@ This project aims to track each visitor's activity on the site, evaluating produ
 ## Results
 The data provides comprehensive insights into various aspects of visitor behavior and product performance on the site. 
 Key findings include
- # Visitor Information
+# Visitor informstio
      Detailed tracking of each visitor's activity, including duration of site visits, frequency of visits, and products ordered.
  # Product Performance
   Identification of top-performing products by revenue, as well as those with the highest order quantities, allowing for targeted inventory and marketing strategies.
