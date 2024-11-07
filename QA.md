@@ -76,12 +76,16 @@ from analytics
 
  /* as we can see there many countries and cities with missing data*/
 
-select
-    case when country = '(not set)' then 'unkown'
-	    else country end as country,
-    case when city = '(not set)' then country
-	     when city = 'not available in demo dataset' then country
-		  else city end as city,
- from all_sessions  -- we can use differnet techniques to remove or use different name to replace the missing data*/
+ --4, wrong data formats e.g date, time 
+
+ select 
+  (time * interval'1 second')::time as time,   --to change the data format in to time
+	case when timeonsite is null then '00:00:00'
+	       else (timeonsite * interval '1 second')::time end as timeonsite,
+		   to_date(date::text,'yyyymmdd')::date as date, --to change the data format in to date format
+		    ecommerceaction_type::integer
+	from all_sessions
+
+
 QA Process:
 Describe your QA process and include the SQL queries used to execute it.
