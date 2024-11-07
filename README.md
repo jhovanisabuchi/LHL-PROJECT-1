@@ -1,8 +1,7 @@
 # Final-Project-Transforming-and-Analyzing-Data-with-SQL
 
 ## Project/Goals
-This project aims to track each visitor's activity on the site, evaluating product sales, stock levels, pricing, and customer preferences across various locations. The main objective is to build a comprehensive tracking system that monitors visitor behavior, providing insights into visit frequency, engagement, order details, and revenue generation.The project’s goal is to understand and analyze data to support informed decision-making. This includes identifying locations with top sales, high-revenue products, and popular product categories by location and visitor demographics. The insights will guide strategic decisions such as inventory management, pricing strategies, and targeted marketing efforts to improve overall performance.
-
+This project aims to track each vistors activity on sote, evaluating product sales, stock leveles, pricing, and customer prefernce across varios locations.the main objective is to build a comprehnsive tracking system that monitors visitors behavior, providing insight into vidit frequency, engagement, order details, and  revenue generation.The progects goal is to understand and analyze data to support informed decison-making. thid include identifying locations with top sales , high-revenue products, and popular product categories by location and viditor demographics. The insight will guid startegic decissions such as inventory manangment, pricing strategies, and target marketing efforts to imorove overall performance. 
 ## Process
 1, Data cleaning
      # remove duplicates
