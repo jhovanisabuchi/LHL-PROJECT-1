@@ -2,7 +2,7 @@ Answer the following questions and provide the SQL queries used to find the answ
 
     
 **Question 1: Which cities and countries have the highest level of transaction revenues on the site?**
-
+SQL Queries:
 
 with total_revenue as (      -- create cte to calculate total revenue and modify the missing ata in the city and country
 select  
@@ -22,12 +22,13 @@ select
       rank() over (order by total_transaction_rev desc) as rank, --rank the cities and countries by the transaction to find the higher transaction 
       city,
 	  country,
-	  total_transaction_rev
+	  to_char(total_transaction_rev,'9,999,999,999') as total_transaction_rev
 
 from total_revenue
 where city != country ---- to exclude raws with missing city and i used the country name to handle the nulls and missing data
 order by total_transaction_rev desc
 limit 10     -- identify the top 10 highest total revenue
+
 
 
 Answer:
