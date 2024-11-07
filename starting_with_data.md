@@ -128,7 +128,8 @@ order by total_revenue desc,
 
 
 Answer:
-![Uploading Screenshot 2024-11-07 041032.png…]()
+
+![Screenshot 2024-11-07 041032](https://github.com/user-attachments/assets/c10e1ab1-ef53-48a1-99fe-72c91b362254)
 
 
 
