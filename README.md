@@ -19,8 +19,6 @@ This project aims to track each visitor's activity on the site, evaluating produ
 
 
 ## Results
-(fill in what you discovered this data could tell you and how you used the data to answer those questions)
-
 The data provides comprehensive insights into various aspects of visitor behavior and product performance on the site. 
 Key findings include
  # Visitor Information
