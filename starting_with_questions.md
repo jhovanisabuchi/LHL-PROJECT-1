@@ -1,7 +1,7 @@
 Answer the following questions and provide the SQL queries used to find the answer.
 
     
-**Question 1: Which cities and countries have the highest level of transaction revenues on the site?**
+**Question 1: Which cities and countries have the highest level of transaction revenues on the site?
 SQL Queries:
 
 with total_revenue as (      -- create cte to calculate total revenue and modify the missing ata in the city and country
@@ -32,13 +32,12 @@ limit 10     -- identify the top 10 highest total revenue
 
 
 Answer:
-![Screenshot 2024-11-07 101254](https://github.com/user-attachments/assets/c78b5b6d-affd-4542-ada7-6092192a31a6)
+![Screenshot 2024-11-07 101446](https://github.com/user-attachments/assets/2ce5c1d4-acee-42dd-b285-74ed15966a98)
 
 
 
 
-
-**Question 2: What is the average number of products ordered from visitors in each city and country?**
+**Question 2: What is the average number of products ordered from visitors in each city and country?
 
 
 SQL Queries:
@@ -69,7 +68,7 @@ Answer:
 
 
 
-**Question 3: Is there any pattern in the types (product categories) of products ordered from visitors in each city and country?**
+**Question 3: Is there any pattern in the types (product categories) of products ordered from visitors in each city and country?
 
 
 SQL Queries:
@@ -131,7 +130,7 @@ Answer:
 
 
 
-**Question 4: What is the top-selling product from each city/country? Can we find any pattern worthy of noting in the products sold?**
+**Question 4: What is the top-selling product from each city/country? Can we find any pattern worthy of noting in the products sold?
 
 
 SQL Queries:
@@ -178,7 +177,7 @@ Answer:
 
 
 
-**Question 5: Can we summarize the impact of revenue generated from each city/country?**
+**Question 5: Can we summarize the impact of revenue generated from each city/country?
 
 SQL Queries:
 with revenue as (
