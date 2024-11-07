@@ -1,4 +1,12 @@
 What are your risk areas? Identify and describe them.
+* missing or incomplete data
+* imposible data e.g negative unitssold
+* duplicates
+* incorrect data formats 
+
+QA Process:
+Describe your QA process and include the SQL queries used to execute it.
+
 --1, check for duplicates of fullvisitorid and productsku
 
 select fullvisitorid 
@@ -20,11 +28,17 @@ order by count(productsku) desc ---794
 /* so there are 794 visitors who ordered more than 1 products it
  means we have fullvisitorid which is more than 1 session*/
 
- /*we can check every column like that and it will give us insights what thos duplicates 
+ select * from analytics --4,301,122
+ 
+ select distinct * from analytics--1,739,308
+
+--In the anlytics table we have duplicates.
+
+/*we can check every column like that and it will give us insights what thos duplicates 
   are happening remember not all duplicates are dirty data*/
 
- --2, check for nulls
- /* as we discovered when we clean the data there are plenty of columns and raws within the tables with
+--2, check for nulls
+/* as we discovered when we clean the data there are plenty of columns and raws within the tables with
   null*/
   
   select * 
@@ -69,6 +83,5 @@ select
 	     when city = 'not available in demo dataset' then country
 		  else city end as city,
  from all_sessions  -- we can use differnet techniques to remove or use different name to replace the missing data*/
-
 QA Process:
 Describe your QA process and include the SQL queries used to execute it.
