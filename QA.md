@@ -66,6 +66,11 @@ from analytics
   from analytics
   where unitssold < 0  -- 1 raw with -89 units sold and thats impossible
 
+  --we can remove the unnecessary data
+ update analytics
+ drop unitssold
+ where unitssold < 0 -- drop the impossible data
+
  select *
  from all_sessions
  where city in ('not available in demo dataset','(not set)' )-- 8656
