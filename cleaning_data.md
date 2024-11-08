@@ -1,19 +1,19 @@
-What issues will you address by cleaning the data?
+/*What issues will you address by cleaning the data?
 # Removing Duplicates
 # Handling Missing Data
 # correcting data inconsistency
 # Ensuring Data Accuracy
 # Standardizing Units and Formats
-#  Handling Data Redundancy
+#  Handling Data Redundancy*/
 
 
 
 
 Queries:
 Below, provide the SQL queries you used to clean your data.
-1, cleaning the all_sessions table 
+--1, cleaning the all_sessions table 
 
-select distinct
+```select distinct
     fullvisitorid,
 	channelgrouping,
 	(time * interval'1 second')::time as time,
@@ -43,11 +43,11 @@ select distinct
 	  ecommerceaction_step,
 	  coalesce (ecommerceaction_option,'(not specified)') as  ecommerceaction_option
 from all_sessions
-;
+;```
 
-2, cleaning the analytics table
+--2, cleaning the analytics table
 
-select distinct
+```select distinct
      visitnumber,
 	 visitid, 
 	 ((interval'1 second') * visitstarttime::integer)::time  as visitstarttime,
@@ -62,11 +62,11 @@ select distinct
 	 coalesce(revenue::bigint, 0) as revenue,
 	 (unitprice/1000000) as unitprice
 from analytics
-;
+;```
 
-3, cleaning the products table
+--3, cleaning the products table
 
-select distinct
+```select distinct
      productsku,
 	 trim(leading from initcap(productname)) as productname,
 	 ordered_quantity,
@@ -75,11 +75,11 @@ select distinct
 	 coalesce(sentimentscore,0) as  sentimentscore,
 	 coalesce(sentimentmagnitude,0) as  sentimentmagnitude
 from products
-;
+;```
 
-4, cleaning the sales_report table
+--4, cleaning the sales_report table
 
-select 
+```select 
    productsku,
    totalordered,
    trim(leading from initcap(productname)) as productname,
@@ -89,6 +89,6 @@ select
    sentimentmagnitude,
    radio
  from sales_report
- ;
+ ;```
 
 
