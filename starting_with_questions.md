@@ -211,6 +211,11 @@ order by total_revenue desc
 Answer:
 ![Screenshot 2024-11-07 112053](https://github.com/user-attachments/assets/68fa8d5a-4ee5-4786-ba38-ead4a5064813)
 
+--6, ERD generated for the data base 
+![Screenshot 2024-11-07 130816](https://github.com/user-attachments/assets/70b78a6b-0c33-4f14-a2a0-c1c6673bc559)
+
+
+
 
 
 
