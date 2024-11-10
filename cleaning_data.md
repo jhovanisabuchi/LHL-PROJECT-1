@@ -4,7 +4,7 @@
 - correcting data inconsistency
 - Ensuring Data Accuracy
 - Standardizing Units and Formats
--  Handling Data Redundancy*/
+-  Handling Data Redundancy
 
 
 
@@ -43,11 +43,10 @@
 	  ecommerceaction_step,
 	  coalesce (ecommerceaction_option,'(not specified)') as  ecommerceaction_option
 from all_sessions
-; ```
+;```
 
-* 2, cleaning the analytics table
-
- ``` select distinct
+*  2, cleaning the anzlytics btable 
+```select distinct
      visitnumber,
 	 visitid, 
 	 ((interval'1 second') * visitstarttime::integer)::time  as visitstarttime,
@@ -61,7 +60,7 @@ from all_sessions
 	 coalesce(bounces, 0) as bounces,
 	 coalesce(revenue::bigint, 0) as revenue,
 	 (unitprice/1000000) as unitprice
-from analytics ```
+from analytics```
 ;
 
 * 3, cleaning the products table
