@@ -7,10 +7,10 @@
 - The insight will guid startegic decissions such as inventory manangment, pricing strategies, and target marketing efforts to imorove overall performance. 
 ## Process
 ## 1, Data cleaning
-     - remove duplicates
-     - remove nulls 
-     - remove rows with missing data or try to fill the missing data from other relevnant tables or column
-     - standardize the data like missspeling , capitalization
+     - Remove duplicates 
+     - Remove nulls 
+     - Remove rows with missing date or try to replace the missing data with relevant tables or columns.
+     - Standardize the data like misspeling, capitalization wrong data format.
 
 ## 2, data analizing : Combined information from these tables to calculate insights such as
     - Frequency of site visits by each visitor
@@ -23,7 +23,7 @@
 ## Results
 The data provides comprehensive insights into various aspects of visitor behavior and product performance on the site. 
 Key findings include
-- Visitor informstio
+- Visitor informstion
      Detailed tracking of each visitor's activity, including duration of site visits, frequency of visits, and products ordered.
 - Product Performance
   Identification of top-performing products by revenue, as well as those with the highest order quantities, allowing for targeted inventory and marketing strategies.
