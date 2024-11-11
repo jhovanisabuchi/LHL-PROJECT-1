@@ -59,8 +59,9 @@ order by  avg_order desc
 
 
 Answer:
+![Screenshot 2024-11-11 115043](https://github.com/user-attachments/assets/909b8152-6d26-4a82-871c-c47492051e38)
 
-![Screenshot 2024-11-07 034615](https://github.com/user-attachments/assets/537ebe84-0886-490e-91dd-0df4337b89e8)
+
 
 
 
@@ -122,8 +123,7 @@ select
 
 Answer:
 
-![Screenshot 2024-11-07 034908](https://github.com/user-attachments/assets/16b41dbc-fa01-4496-9140-28d2cba59f8f)
-
+![Screenshot 2024-11-11 115437](https://github.com/user-attachments/assets/e1233f9c-368d-46fa-835f-0a6ccbda5c5d)
 
 
 
@@ -168,8 +168,8 @@ order by total_sales desc
 
 
 ***Answer:
-![Screenshot 2024-11-07 035354](https://github.com/user-attachments/assets/d6340fea-06cd-4527-abcb-39d2ff0ce67c)
 
+![Screenshot 2024-11-11 115628](https://github.com/user-attachments/assets/11ea1691-5ee0-498d-92e6-c4e129b7e503)
 
 
 
@@ -206,7 +206,7 @@ order by total_revenue desc
 ;
 
 ***Answer:
-![Screenshot 2024-11-07 112053](https://github.com/user-attachments/assets/68fa8d5a-4ee5-4786-ba38-ead4a5064813)
+![Screenshot 2024-11-11 115845](https://github.com/user-attachments/assets/f82792df-b81b-4057-a6c6-afe0254f6268)
 
 --6, ERD generated for the data base 
 ![Screenshot 2024-11-07 130816](https://github.com/user-attachments/assets/70b78a6b-0c33-4f14-a2a0-c1c6673bc559)
