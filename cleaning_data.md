@@ -45,7 +45,7 @@
 from all_sessions
 ;```
 
-*  2, cleaning the anzlytics btable 
+*  2, cleaning the anzlytics btable. 
 
 ```select distinct
      visitnumber,
@@ -61,7 +61,7 @@ from all_sessions
 	 coalesce(bounces, 0) as bounces,
 	 coalesce(revenue::bigint, 0) as revenue,
 	 (unitprice/1000000) as unitprice
-from analytics``
+from analytics```
 ;
 
 * 3, cleaning the products table
