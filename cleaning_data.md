@@ -64,7 +64,7 @@ from all_sessions
 from analytics
 ;```
 
-### 3, cleaning the products table
+# 3, cleaning the products table
 
 ```select distinct
      productsku,
@@ -76,7 +76,8 @@ from analytics
 	 coalesce(sentimentmagnitude,0) as  sentimentmagnitude
 from products
 ;```
-####  4, cleaning the sales_report table
+
+# 4, cleaning the sales_report table
 
 ```select 
    productsku,
