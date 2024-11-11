@@ -1,4 +1,4 @@
-Question 1: Explore the total revenue generated and the number of visit by visitors from every city and country within each month and year,
+## Question 1: Explore the total revenue generated and the number of visit by visitors from every city and country within each month and year,
 
 
 ``` sql
