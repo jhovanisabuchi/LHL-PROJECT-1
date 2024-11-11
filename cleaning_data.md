@@ -1,4 +1,4 @@
-## what issues will you address by cleaning the data?
+## By cleaning this data i will be :
 - Removing Duplicates
 - Handling Missing Data
 - correcting data inconsistency
@@ -9,9 +9,7 @@
 
 
 
-## Queries:
-* Below, provide the SQL queries you used to clean your data.
-# 1, cleaning the all_sessions table 
+# 1, Cleaning the all_sessions table 
 
 ```select distinct
     fullvisitorid,
@@ -43,9 +41,10 @@
 	  ecommerceaction_step,
 	  coalesce (ecommerceaction_option,'(not specified)') as  ecommerceaction_option
 from all_sessions
-;```
+;
+```
 
-## 2, cleaning the anzlytics btable. 
+## 2, Cleaning the anzlytics btable. 
 
 ```select distinct
      visitnumber,
@@ -62,9 +61,10 @@ from all_sessions
 	 coalesce(revenue::bigint, 0) as revenue,
 	 (unitprice/1000000) as unitprice
 from analytics
-;```
+;
+```
 
-# 3, cleaning the products table
+## 3, Cleaning the products table
 
 ```select distinct
      productsku,
@@ -75,9 +75,10 @@ from analytics
 	 coalesce(sentimentscore,0) as  sentimentscore,
 	 coalesce(sentimentmagnitude,0) as  sentimentmagnitude
 from products
-;```
+;
+```
 
-# 4, cleaning the sales_report table
+# 4, Cleaning the sales_report table
 
 ```select 
    productsku,
@@ -89,6 +90,7 @@ from products
    sentimentmagnitude,
    radio
  from sales_report
- ;```
+ ;
+ ```
 
 
