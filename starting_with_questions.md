@@ -66,7 +66,7 @@ order by  avg_order desc
 ## Question 3: Is there any pattern in the types (product categories) of products ordered from visitors in each city and country?**
 
 
-```SQL Queries:
+```SQL
 total_order_location as --create cte to calculate the sum of orders grouped by category within defined city and country
              (select distinct
 		           v2productcategory as category,
@@ -128,7 +128,7 @@ Answer:
 ## Question 4: What is the top-selling product from each city/country? Can we find any pattern worthy of noting in the products sold?**
 
 
-```SQL Queries:
+```SQL
 with total_product_sales as 
       (select distinct v2productname as productname,
               country,
@@ -175,7 +175,7 @@ Answer:
 
 ## Question 5: Can we summarize the impact of revenue generated from each city/country?**
 
-```SQL Queries:
+```SQL
 with revenue as (
      select fullvisitorid,
            visitid::integer,
