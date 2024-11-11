@@ -45,7 +45,7 @@
 from all_sessions
 ;```
 
-# 2, cleaning the anzlytics btable. 
+## 2, cleaning the anzlytics btable. 
 
 ```select distinct
      visitnumber,
@@ -61,9 +61,10 @@ from all_sessions
 	 coalesce(bounces, 0) as bounces,
 	 coalesce(revenue::bigint, 0) as revenue,
 	 (unitprice/1000000) as unitprice
-from analytics```
-;
-# 3, cleaning the products table
+from analytics
+;```
+
+## 3, cleaning the products table
 
 ```select distinct
      productsku,
@@ -74,9 +75,9 @@ from analytics```
 	 coalesce(sentimentscore,0) as  sentimentscore,
 	 coalesce(sentimentmagnitude,0) as  sentimentmagnitude
 from products
-;
+;```
 
-# 4, cleaning the sales_report table
+## 4, cleaning the sales_report table
 
 ```select 
    productsku,
@@ -88,6 +89,6 @@ from products
    sentimentmagnitude,
    radio
  from sales_report
- ;
+ ;```
 
 
