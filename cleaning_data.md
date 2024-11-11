@@ -44,6 +44,7 @@
 	  coalesce (ecommerceaction_option,'(not specified)') as  ecommerceaction_option
 from all_sessions
 ;```
+
 # 2, cleaning the anzlytics btable. 
 
 ```select distinct
@@ -62,6 +63,7 @@ from all_sessions
 	 (unitprice/1000000) as unitprice
 from analytics
 ;```
+
 # 3, cleaning the products table
 
 ```select distinct
