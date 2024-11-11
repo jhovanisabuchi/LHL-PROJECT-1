@@ -1,8 +1,8 @@
-Answer the following questions and provide the SQL queries used to find the answer.
+# Answer the following questions and provide the SQL queries used to find the answer.
 
     
-**Question 1: Which cities and countries have the highest level of transaction revenues on the site?""
-```SQL Queries:
+## Question 1: Which cities and countries have the highest level of transaction revenues on the site?""
+```SQL
 
 with total_revenue as (      -- create cte to calculate total revenue and modify the missing ata in the city and country
 select  
@@ -27,20 +27,16 @@ select
 from total_revenue
 where city != country ---- to exclude raws with missing city and i used the country name to handle the nulls and missing data
 order by total_transaction_rev desc
-limit 10     -- identify the top 10 highest total revenue```
+limit 10;     -- identify the top 10 highest total revenue
+```
 
 
-
-***Answer:
+-- Answer:
 ![Screenshot 2024-11-07 101446](https://github.com/user-attachments/assets/2ce5c1d4-acee-42dd-b285-74ed15966a98)
 
+## Question 2: What is the average number of products ordered from visitors in each city and country?
 
-
-
-**Question 2: What is the average number of products ordered from visitors in each city and country?**
-
-
-```SQL Queries:
+```SQL
 select 
      case when city = 'not available in demo dataset' then country 
 	         else city end as city,
@@ -57,18 +53,18 @@ where
 	 country not in ('(not set)', 'not available in demo dataset')
 group by  city, country
 order by  avg_order desc
-;```
+;
+```
 
 
 
-Answer:
-
+--Answer:
 ![Screenshot 2024-11-07 034615](https://github.com/user-attachments/assets/537ebe84-0886-490e-91dd-0df4337b89e8)
 
 
 
 
-**Question 3: Is there any pattern in the types (product categories) of products ordered from visitors in each city and country?**
+## Question 3: Is there any pattern in the types (product categories) of products ordered from visitors in each city and country?**
 
 
 ```SQL Queries:
@@ -118,19 +114,19 @@ select
   where (top_sales <= 3 or bottom_sales <= 3) and total_sales > 0 -- now fetch catagories which are more popular and least popular 
                                                                     --by visitors in each city and country
   order by country, city, top_sales, bottom_sales
-  ;```
+  ;
+  ```
        
 
 
 
 Answer:
-
 ![Screenshot 2024-11-07 034908](https://github.com/user-attachments/assets/16b41dbc-fa01-4496-9140-28d2cba59f8f)
 
 
 
 
-**Question 4: What is the top-selling product from each city/country? Can we find any pattern worthy of noting in the products sold?**
+## Question 4: What is the top-selling product from each city/country? Can we find any pattern worthy of noting in the products sold?**
 
 
 ```SQL Queries:
@@ -165,19 +161,20 @@ from ranked_sales
 where sales_rank = 1 and
       total_sales > 0
 order by total_sales desc
-;```
+;
+```
 
 
 
 
-***Answer:
+Answer:
 ![Screenshot 2024-11-07 035354](https://github.com/user-attachments/assets/d6340fea-06cd-4527-abcb-39d2ff0ce67c)
 
 
 
 
 
-**Question 5: Can we summarize the impact of revenue generated from each city/country?**
+## Question 5: Can we summarize the impact of revenue generated from each city/country?**
 
 ```SQL Queries:
 with revenue as (
@@ -204,14 +201,15 @@ where city not in ('not available in demo dataset', '(not set)')
 group by city,
          country
 order by total_revenue desc 
-;```
+;
+```
 
 ;
 
-***Answer:
+Answer:
 ![Screenshot 2024-11-07 112053](https://github.com/user-attachments/assets/68fa8d5a-4ee5-4786-ba38-ead4a5064813)
 
---6, ERD generated for the data base 
+## 6, ERD generated for the data base 
 ![Screenshot 2024-11-07 130816](https://github.com/user-attachments/assets/70b78a6b-0c33-4f14-a2a0-c1c6673bc559)
 
 
