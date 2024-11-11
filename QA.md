@@ -114,7 +114,7 @@ from analytics
 		   to_date(date::text,'yyyymmdd')::date as date, --to change the data format in to date format
 		    ecommerceaction_type::integer
 	from all_sessions
-	```
+```
 
 
 
