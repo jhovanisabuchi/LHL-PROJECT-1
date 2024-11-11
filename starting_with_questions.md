@@ -37,7 +37,7 @@ limit 10     -- identify the top 10 highest total revenue```
 
 
 
-# Question 2: What is the average number of products ordered from visitors in each city and country?**
+-- Question 2: What is the average number of products ordered from visitors in each city and country?**
 
 
 ```SQL Queries:
@@ -68,7 +68,7 @@ Answer:
 
 
 
-# Question 3: Is there any pattern in the types (product categories) of products ordered from visitors in each city and country?**
+-- Question 3: Is there any pattern in the types (product categories) of products ordered from visitors in each city and country?**
 
 
 ```SQL Queries:
