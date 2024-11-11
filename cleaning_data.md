@@ -1,17 +1,17 @@
-/*What issues will you address by cleaning the data?
-# Removing Duplicates
-# Handling Missing Data
-# correcting data inconsistency
-# Ensuring Data Accuracy
-# Standardizing Units and Formats
-#  Handling Data Redundancy*/
+## what issues will you address by cleaning the data?
+- Removing Duplicates
+- Handling Missing Data
+- correcting data inconsistency
+- Ensuring Data Accuracy
+- Standardizing Units and Formats
+-  Handling Data Redundancy
 
 
 
 
-Queries:
-Below, provide the SQL queries you used to clean your data.
---1, cleaning the all_sessions table 
+## Queries:
+* Below, provide the SQL queries you used to clean your data.
+# 1, cleaning the all_sessions table 
 
 ```select distinct
     fullvisitorid,
@@ -45,7 +45,7 @@ Below, provide the SQL queries you used to clean your data.
 from all_sessions
 ;```
 
---2, cleaning the analytics table
+## 2, cleaning the anzlytics btable. 
 
 ```select distinct
      visitnumber,
@@ -64,7 +64,7 @@ from all_sessions
 from analytics
 ;```
 
---3, cleaning the products table
+# 3, cleaning the products table
 
 ```select distinct
      productsku,
@@ -77,7 +77,7 @@ from analytics
 from products
 ;```
 
---4, cleaning the sales_report table
+# 4, cleaning the sales_report table
 
 ```select 
    productsku,
