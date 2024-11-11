@@ -11,7 +11,8 @@
 
 # 1, Cleaning the all_sessions table 
 
-```select distinct
+```
+select distinct
     fullvisitorid,
 	channelgrouping,
 	(time * interval'1 second')::time as time,
@@ -46,7 +47,8 @@ from all_sessions
 
 ## 2, Cleaning the anzlytics btable. 
 
-```select distinct
+```
+select distinct
      visitnumber,
 	 visitid, 
 	 ((interval'1 second') * visitstarttime::integer)::time  as visitstarttime,
@@ -66,7 +68,8 @@ from analytics
 
 ## 3, Cleaning the products table
 
-```select distinct
+```
+select distinct
      productsku,
 	 trim(leading from initcap(productname)) as productname,
 	 ordered_quantity,
@@ -80,7 +83,8 @@ from products
 
 # 4, Cleaning the sales_report table
 
-```select 
+```
+select 
    productsku,
    totalordered,
    trim(leading from initcap(productname)) as productname,
