@@ -43,9 +43,10 @@
 	  ecommerceaction_step,
 	  coalesce (ecommerceaction_option,'(not specified)') as  ecommerceaction_option
 from all_sessions
-;``
+;```
 
 *  2, cleaning the anzlytics btable 
+
 ```select distinct
      visitnumber,
 	 visitid, 
