@@ -13,7 +13,7 @@
 * Below, provide the SQL queries you used to clean your data.
 * 1, cleaning the all_sessions table 
 
-``select distinct
+```select distinct
     fullvisitorid,
 	channelgrouping,
 	(time * interval'1 second')::time as time,
