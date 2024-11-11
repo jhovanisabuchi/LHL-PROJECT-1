@@ -11,7 +11,7 @@
 
 ## Queries:
 * Below, provide the SQL queries you used to clean your data.
--- 1, cleaning the all_sessions table 
+# 1, cleaning the all_sessions table 
 
 ```select distinct
     fullvisitorid,
@@ -44,7 +44,7 @@
 	  coalesce (ecommerceaction_option,'(not specified)') as  ecommerceaction_option
 from all_sessions
 ;```
--- 2, cleaning the anzlytics btable. 
+# 2, cleaning the anzlytics btable. 
 
 ```select distinct
      visitnumber,
@@ -62,7 +62,7 @@ from all_sessions
 	 (unitprice/1000000) as unitprice
 from analytics
 ;```
--- 3, cleaning the products table
+# 3, cleaning the products table
 
 ```select distinct
      productsku,
@@ -74,7 +74,7 @@ from analytics
 	 coalesce(sentimentmagnitude,0) as  sentimentmagnitude
 from products
 ;```
--- 4, cleaning the sales_report table
+# 4, cleaning the sales_report table
 
 ```select 
    productsku,
