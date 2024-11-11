@@ -13,7 +13,7 @@
 * Below, provide the SQL queries you used to clean your data.
 * 1, cleaning the all_sessions table 
 
-``` select distinct
+``select distinct
     fullvisitorid,
 	channelgrouping,
 	(time * interval'1 second')::time as time,
@@ -60,7 +60,7 @@ from all_sessions
 	 coalesce(bounces, 0) as bounces,
 	 coalesce(revenue::bigint, 0) as revenue,
 	 (unitprice/1000000) as unitprice
-from analytics```
+from analytics``
 ;
 
 * 3, cleaning the products table
