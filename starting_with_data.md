@@ -30,12 +30,11 @@ select   country,
 				extract(month from(to_date(s.date::text,'yyyymmdd'))),
                 extract(year from(to_date(s.date::text,'yyyymmdd')))
      order by visit_count desc,
-	           total_revenue desc
-            ;
-			```
+	           total_revenue desc;
+```
   
   
-  Answer: 
+Answer: 
 ![Screenshot 2024-11-07 040559](https://github.com/user-attachments/assets/eca57219-e8b6-4676-b013-e851d03838ea)
 
 
