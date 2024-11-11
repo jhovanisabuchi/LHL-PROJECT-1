@@ -1,6 +1,5 @@
-# Answer the following questions and provide the SQL queries used to find the answer.
 
-    
+
 ## Question 1: Which cities and countries have the highest level of transaction revenues on the site?""
 ```SQL
 
