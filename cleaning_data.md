@@ -11,7 +11,7 @@
 
 # 1, Cleaning the all_sessions table 
 
-```
+```sql
 select distinct
     fullvisitorid,
 	channelgrouping,
@@ -47,7 +47,7 @@ from all_sessions
 
 ## 2, Cleaning the anzlytics btable. 
 
-```
+```sql
 select distinct
      visitnumber,
 	 visitid, 
@@ -68,7 +68,7 @@ from analytics
 
 ## 3, Cleaning the products table
 
-```
+```sql
 select distinct
      productsku,
 	 trim(leading from initcap(productname)) as productname,
@@ -83,7 +83,7 @@ from products
 
 # 4, Cleaning the sales_report table
 
-```
+```sql
 select 
    productsku,
    totalordered,
